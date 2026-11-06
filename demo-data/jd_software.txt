@@ -1,0 +1,17 @@
+Job Title: Software Engineer
+
+We are looking for a Software Engineer to build and maintain web applications.
+
+Responsibilities:
+- Develop and maintain REST APIs and web applications
+- Write clean, tested code and participate in code reviews
+- Deploy and monitor services on cloud platforms
+- Collaborate with the team in an Agile environment
+
+Requirements:
+- 2+ years of experience with Python or JavaScript
+- Experience with React, Node.js or Flask
+- Knowledge of SQL and NoSQL databases (PostgreSQL, MongoDB)
+- Familiarity with Git, Docker, AWS and CI/CD
+- Unit testing experience
+- Strong problem-solving and communication skills
