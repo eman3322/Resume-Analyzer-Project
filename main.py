@@ -1,5 +1,6 @@
 from pathlib import Path
 from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse
 
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -46,7 +47,7 @@ async def analyze(resume: UploadFile = File(...), job_description: str = Form(..
     data = await resume.read()
 
     if len(data) > MAX_SIZE:
-        raise HTTPException(status_code=413, detail="File 5MB se badi hai")
+        raise HTTPException(status_code=413, detail="File 4MB se badi hai")
 
     if not job_description.strip():
         raise HTTPException(status_code=400, detail="Job description khali hai")

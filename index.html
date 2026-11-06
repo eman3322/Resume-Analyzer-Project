@@ -659,7 +659,7 @@ footer {
                             <span class="browse">or browse files</span>
                         </strong>
 
-                        <p>PDF or DOCX · Maximum 5 MB</p>
+                        <p>PDF or DOCX · Maximum 4 MB</p>
 
                     </label>
 
@@ -950,7 +950,7 @@ fileInput.addEventListener("change", function () {
         return;
     }
 
-    if (file.size > 5 * 1024 * 1024) {
+    if (file.size > 4 * 1024 * 1024) {
         showMessage("File size must be under 5 MB.");
         this.value = "";
         selectedFile = null;
@@ -1023,7 +1023,7 @@ form.addEventListener("submit", async function (e) {
         formData.append("resume", selectedFile);
         formData.append("job_description", jobText);
 
-        const res = await fetch(API + "/analyze", { method: "POST", body: formData });
+        const res = await fetch("/analyze", { method: "POST", body: formData });
         const data = await res.json().catch(() => ({}));
 
         if (!res.ok) {
